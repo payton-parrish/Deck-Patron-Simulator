@@ -1,0 +1,122 @@
+0|Acid Splash|Conjuration|Action|false|60 Feet|Instantaneous|false|true|true|false|false
+0|Blade Ward|Adbjuration|Action|false|Self|1 round|false|true|true|false|true
+0|Booming Blade|Evocation|Action|false|Self (5-foot radius)|1 round|false|false|true|true|true
+0|Chill Touch|Necromancy|Action|false|120 feet|1 round|false|true|true|false|true
+0|Control Flames|Transmutation|Action|false|60 feet|Instantaneous or 1 hour|false|false|true|false|false
+0|Create Bonfire|Conjuration|Action|false|60 feet|1 minute|true|true|true|false|true
+0|Dancing Lights|Evocation|Action|false|120 feet|1 minute|true|true|true|true|false
+0|Druidcraft|Transmutation|Action|false|30 feet|Instantaneous|false|true|true|false|false
+0|Eldritch Blast|Evocation|Action|false|120 feet|Instantaneous|false|true|true|false|true
+0|Encode Thoughts|Enchantment|Action|false|Self|8 Hours|false|true|false|false
+0|Fire Bolt|Evocation|Action|false|120 feet|Instantaneous|false|true|true|false|false
+0|Friends|Enchantment|Action|false|Self|1 minute|true|false|true|true|true
+0|Frostbite|Evocation|Action|false|60 feet|Instantaneous|false|true|true|false|true
+0|Green-Flame Blade|Evocation|Action|false|Self (5-foot radius)|Instantaneous|false|false|true|true|true
+0|Guidance|Divination|Action|false|Touch|1 minute|true|true|true|false|false
+0|Gust|Transmutation|Action|false|30 feet|Instantaneous|false|true|true|false|false
+0|Infestation|Conjuration|Action|false|30 feet|Instantaneous|false|true|true|true
+0|Light|Evocation|Action|false|Touch|1 hour|true|true|false|true|false
+0|Lightning Lure|Evocation|Action|false|Self (15-foot radius)|Instantaneous|false|true|false|false|false
+0|Mage Hand|Conjuration|Action|false|30 feet|1 minute|false|true|true|false|true
+0|Magic Stone|Transmutation|Bonus Action|false|Touch|1 minute|false|true|true|false|true
+0|Mending|Transmutation|1 Minute|false|Touch|Instantaneous|false|true|true|true|false
+0|Message|Transmutation|Action|false|120 feet|1 round|false|true|true|true|false
+0|Mind Sliver|Enchantment|Action|false|60 feet|1 round|false|true|false|false|true
+0|Minor Illusion|Illusion|Action|false|30 feet|1 minute|false|false|true|true|true
+0|Mold Earth|Transmutation|Action|30 feet|Instantaneous or 1 hour|false|false|true|false|false
+0|Poison Spray|Conjuration|Action|false|10 feet|Instantaneous|false|true|true|false|true
+0|Prestidigitation|Transmutation|Action|false|10 feet|1 hour|false|true|true|false|true
+0|Primal Savagery|Transmutation|Action|false|Self|Instantaneous|false|false|true|false|false
+0|Produce Flame|Conjuration|Action|false|Self|10 minutes|false|true|true|false|false
+0|Ray of Frost|Evocation|Action|false|60 feet|Instantaneous|false|true|true|false|false
+0|Resistance|Abjuration|Action|false|Touch|1 minute|false|true|true|true|false
+0|Sacred Flame|Evocation|Action|false|60 feet|Instantaneous|false|true|true|false|false
+0|Shape Water|Transmutation|Action|false|30 feet|Instantaneous or 1 hour|false|false|true|false|false
+0|Shillelagh|Transmutation|Bonus Action|false|Touch|1 minute|false|true|true|true|false
+0|Shocking Grasp|Evocation|Action|Touch|Instantaneous|false|true|true|false|false
+0|Spare the Dying|Necromancy|Action|false|Touch|Instantaneous|false|true|true|false|false
+0|Sword Burst|Conjuration|Action|false|Self (5-foot radius)|Instantaneous|false|true|false|false|true
+0|Thaumaturgy|Transmutation|Action|false|30 feet|1 minute|false|true|false|false|false
+0|Thorn Whip|Transmutation|Action|false|30 feet|Instantaneous|false|true|true|true|false
+0|Thunderclap|Evocation|Action|false|Self (5-foot radius)|Instantaneous|false|false|true|false|true
+0|Toll the Dead|Necromancy|Action|false|60 feet|Instantaneous|false|true|true|false|true
+0|True Strike|Divination|Action|false|30 feet|1 round|true|false|true|false|true
+0|Vicious Mockery|Enchantment|Action|false|60 feet|Instantaneous|false|true|false|false|false
+0|Word of Radiance|Evocation|Action|false|5 feet|Instantaneous|false|true|false|true|false
+1|Absorb Elements|Abjuration|Reaction|false|Self|1 round|false|false|true|false|
+1|Alarm|Abjuration|1 Minute|true|30 feet|8 Hours|false|true|true|true|
+1|Animal Friendship|Enchantment|Action|false|30 feet|24 hours|false|true|true|true|
+1|Armor of Agathys|Abjuration|Action|false|Self|1 hour|false|true|true|true|
+1|Arms of Hadar|Conjuration|Action|false|Self (10-foot radius)|Instantaneous|false|true|true|false|
+1|Bane|Enchantment|Action|false|30 feet|1 minute|true|true|true|true|
+1|Beast Bond|Divination|Action|false|Touch|1 minute|true|true|true|true|
+1|Bless	Enchantment|Action|false|30 feet|1 minute|true|true|true|true|
+1|Burning Hands|Evocation|Action|false|Self (15-foot cone)|Instantaneous|false|true|true|false|
+1|Catapult|Transmutation|Action|false|60 feet|Instantaneous|false|false|true|false|
+1|Cause Fear|Necromancy|Action|60 feet|1 minute|true|true|true|false|
+1|Ceremony|Evocation|Action|true|Touch|Instantaneous|false|true|true|true|
+1|Chaos Bolt|Evocation|Action|false|120 feet|Instantaneous|false|true|true|false|
+1|Charm Person|Enchantment|Action|false|30 feet|1 hour|false|true|true|false|
+1|Chromatic Orb|Evocation|Action|false|90 feet|Instantaneous|false|true|true|true|
+1|Color Spray|Illusion|Action|false|Self (15-foot cone)|1 round|false|true|true|true|
+1|Command|Enchantment|Action|false|60 feet|1 round|false|true|false|false|
+1|Compelled Duel|Enchantment|Bonus Action|false|30 feet|1 minute|true|true|false|false|
+1|Comprehend Languages|Divination|Action|true|Self|1 hour|false|true|true|true|
+1|Create or Destroy Water|Transmutation|Action|false|30 feet|Instantaneous|false|true|true|true|
+1|Cure Wounds|Evocation|Action|false|Touch|Instantaneous|false|true|true|false|
+1|Detect Evil and Good|Divination|Action|false|Self|10 minutes|true|true|true|false|
+1|Detect Magic|Divination|Action|true|Self|10 minutes|true|true|true|false
+1|Detect Poison and Disease|Divination|Action|Self|10 minutes|true|true|true|true|
+1|Disguise Self|Illusion|Action|false|Self|1 hour|false|true|true|false|
+1|Dissonant Whispers|Enchantment|Action|false|60 feetInstantaneous|false|true|false|false|
+1|Distort Value|Illusion|1 Minute|false|Touch|8 hours|false|true|false|false|
+1|Divine Favor|Evocation|Bonus Action|false|Self|1 minute|true|true|true|false|
+1|Earth Tremor|Evocation|Action|false|Self (10-foot radius)|Instantaneous|false|true|true|false|
+1|Ensnaring Strike|Conjuration|Bonus Action|false|Self|1 minute|true|true|false|false|
+1|Entangle|Conjuration|Action|false|90 feet|1 minute|true|true|true|false|
+1|Expeditious Retreat|Transmutation|Bonus Action|false|Self|10 minutes|true|true|true|false|
+1|Faerie Fire|Evocation|Action|false|60 feet|1 minute|true|true|false|false|false|
+1|False Life|Necromancy|Action|false|Self|1 hour|false|true|true|true|
+1|Feather Fall|Transmutation|Reaction|false|60 feet|1 minute|false|true|true|false|
+1|Find Familiar|Conjuration|1 Hour|true|10 feet|Instantaneous|false|true|true|true|
+1|Fog Cloud|Conjuration|Action|120 feet|1 hour|true|true|true|false|
+1|Frost Fingers|Evocation|Action|false|Self (15-foot cone)|Instantaneous|false|true|true|false|
+1|Goodberry|Transmutation|Action|false|Touch|Instantaneous|false|true|true|true|
+1|Grease|Conjuration|Action|false|60 feet|1 minute|false|true|true|true|
+1|Guiding Bolt|Evocation|Action|false|120 feet|1 round|false|true|true|false|
+1|Hail of Thorns|Conjuration|Bonus Action|false|Self|1 minute|true|true|false|false|
+1|Healing Word|Evocation|Bonus Action|false|60 feet|Instantaneous|false|true|false|false|
+1|Hellish Rebuke|Evocation|Reaction|false|60 feet|Instantaneous|false|true|true|false|
+1|Heroism|Enchantment|Action|false|Touch|1 minute|true|true|true|false|
+1|Hex|Enchantment|Bonus Action|false|90 feet|1 hour|true|true|true|true|
+1|Hunter's Mark|Divination|Bonus Action|false|90 feet|1 hour|true|true|false|false|
+1|Ice Knife|Conjuration|Action|true|60 feet|Instantaneous|false|false|true|true|
+1|Identify|Divination|1 Minute|true|Touch|Instantaneous|false|true|true|true|
+1|Illusory Script|Illusion|1 Minute|true|Touch|10 days|false|false|true|true|
+1|Inflict Wounds|Necromancy|Action|false|Touch|Instantaneous|false|true|true|
+1|Jim's Magic Missile|Evocation|Action|false|120 feet|Instantaneous|false|true|true|true|
+1|Jump|Transmutation|Action|false|Touch|1 minute|false|true|true|true|
+1|Longstrider|Transmutation|Action|false|Touch|1 hour|false|true|true|true|
+1|Mage Armor|Abjuration|Action|false|Touch|8 hours|false|true|true|true|
+1|Magic Missile|Evocation|Action|false|120 feet|Instantaneous|false|ture|true|false|
+1|Protection from Evil and Good|Abjuration|Action|false|Touch|10 minutes|true|true|true|true|
+1|Purify Food and Drink|Transmutation|Action|true|10 feet|Instantaneous|false|true|true|false|
+1|Ray of Sickness|Necromancy|Action|false|60 feet|Instantaneous|false|true|true|false|
+1|Sanctuary|Abjuration|Bonus Action|30 feet|1 minute|false|true|true|true|
+1|Searing Smite|Evocation|Bonus Action|false|Self|1 minute|true|true|false|false|
+1|Shield|Abjuration|Reaction|false|Self|1 round|false|true|true|false|
+1|Shield of Faith|Abjuration|Bonus Action|false|60 feet|1 minute|true|true|true|true|
+1|Silent Image|Illusion|Action|false|60 feet|10 minutes|true|true|true|true|
+1|Silvery Barbs|Enchantment|Reaction|60 feet|Instantaneous|false|true|false|false|
+1|Sleep|Enchantment|Action|false|90 feet|1 minute|false|true|true|true|
+1|Snare|Abjuration|1 Minute|false|Touch|Until dispelled or triggered|false|true|true|true|
+1|Speak with Animals|Divination|Action|true|Self|10 minutes|false|true|true|false|
+1|Tasha's Caustic Brew|Evocation|Action|false|Self (30-foot line)|1 minute|true|true|true|true|
+1|Tasha's Hideous Laughter|Enchantment|Action|false|30 feet|1 minute|true|true|true|true|
+1|Tenser's Floating Disk|Conjuration|Action|true|30 feet|1 hour|false|true|true|true|
+1|Thunderous Smite|Evocation|Bonus Action|false|Self|1 minute|true|true|false|false|
+1|Thunderwave|Evocation|Action|false|Self (15-foot cube)|Instantaneous|false|true|true|false|
+1|Unseen Servant|Conjuration|Action|true|60 feet|1 hour|false|true|true|true|
+1|Witch Bolt|Evocation|Action|false|30 feet|1 minute|true|true|true|true|
+1|Wrathful Smite|Evocation|Bonus Action|false|Self|1 minute|true|true|false|false|
+1|Zephyr Strike|Transmutation|Bonus Action|false|Self|1 minute|true|true|false|false|
