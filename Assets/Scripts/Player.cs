@@ -11,10 +11,9 @@ public struct Player
     public int slots { get; set; }
     public Transform playerBar { get; set; }
 
-
     public Player(int lvl,int cha)
     {
-        level = lvl;
+        level = 1;
         if(level < 1)
         {
             level = 1;
@@ -39,7 +38,7 @@ public struct Player
                 slots = 1;
                 break;
         }
-        playerBar = GameObject.Find("Canvas").transform.Find("Player");
+        playerBar = GameObject.Find("Canvas").transform.Find("Menu").transform.Find("Player");
         playerBar.transform.Find("Player Level").transform.Find("Dropdown").GetComponent<TMP_Dropdown>().onValueChanged.AddListener(changeLevel);
         playerBar.transform.Find("Charisma").transform.Find("Increment").GetComponent<Button>().onClick.AddListener(Increment);
         playerBar.transform.Find("Charisma").transform.Find("Decrement").GetComponent<Button>().onClick.AddListener(Decrement);
@@ -67,7 +66,7 @@ public struct Player
                 break;
         }
         playerBar.transform.Find("Spell Slots").GetComponent<Text>().text = "Spell Slots: " + slots;
-        if(level >= 11)
+        /*if(level >= 11)
         {
             int slotLevel = 6;
             switch(level)
@@ -88,15 +87,8 @@ public struct Player
                     slotLevel = 6;
                     break;
             }
-            Card[] test = GameObject.Find("System").GetComponent<SpellSystem>().listOfCards;
-            foreach (Card i in test)
-            {
-                if(i.spell.level <= slotLevel)
-                {
-                    i.Increment();
-                }
-            }
-        }
+            mysticArcanum(slotLevel);
+        }*/
     }
 
     void Increment()
@@ -110,4 +102,22 @@ public struct Player
         charismaMod--;
         playerBar.transform.Find("Charisma").GetComponent<Text>().text = "Charisma Modifier: " + charismaMod;
     }
+
+    /*void mysticArcanum(int slotLevel)
+    {
+        foreach (Card i in GameObject.Find("System").GetComponent<SpellSystem>().getList())
+        {
+            if(!i.learned)
+            {
+                if(i.spell.level <= slotLevel)
+                {
+                    i.forceSetCopies(1);
+                }
+                else
+                {
+                    i.forceSetCopies(0);
+                }
+            }
+        }
+    }*/
 }

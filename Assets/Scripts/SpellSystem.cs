@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.IO;
+using UnityEngine.UI;
 
 public class SpellSystem : MonoBehaviour
 {
-    public static Spell[] SpellList = new Spell[0];
-    public static Card[] listOfCards = new Card[0];
+    public Spell[] SpellList = new Spell[0];
+    public Card[] listOfCards = new Card[0];
+    public Font thisFont = null;
+    public GameObject thisSlider = null;
+    public GameObject thisButton = null;
     void Start()
     {
         string[] lines = File.ReadAllLines("All Spells List.txt");
@@ -46,7 +50,7 @@ public class SpellSystem : MonoBehaviour
             {
                 if(SpellList[j].spellName.Equals(separate[0]))
                 {
-                    SpellList[j].ritual = true;
+                    SpellList[j].warlock = true;
                     break;
                 }
             }
@@ -66,12 +70,85 @@ public class SpellSystem : MonoBehaviour
             }
         }
 
-        Player player = new Player(12,10);
-        Array.Resize<Card>(ref listOfCards, SpellList.Length+1);
+        Player player = new Player(1,10);
+        Array.Resize<Card>(ref listOfCards, SpellList.Length);
+        GameObject levelTitle = new GameObject();
+        levelTitle.transform.parent = GameObject.Find("Canvas").transform.Find("Menu").transform;
+        levelTitle.transform.SetPositionAndRotation(new Vector3(150,325,0),new Quaternion(0,0,0,0));
+        levelTitle.name = "Cantrip";
+        levelTitle.AddComponent<Text>().text = levelTitle.name + ":";
+        levelTitle.GetComponent<Text>().font = thisFont;
+        levelTitle.GetComponent<Text>().fontSize = 42;
+        levelTitle.GetComponent<Text>().fontStyle = FontStyle.Bold;
+        levelTitle.GetComponent<Text>().horizontalOverflow = HorizontalWrapMode.Overflow;
+        level = 0;
+        int cols = 0;
+        int rows = 0;
         for(int i = 0; i < SpellList.Length; i++)
         {
-            listOfCards[i] = new Card(SpellList[i],false,0,300*(-1+i%3),100-50*(i/3), player);
+            if(level != SpellList[i].level)
+            {
+                cols = 0;
+                if(rows%3 != 0)
+                {
+                    rows += 3;
+                    rows -= rows%3;
+                }
+                rows += 3;
+                level = SpellList[i].level;
+                levelTitle = new GameObject();
+                levelTitle.transform.parent = GameObject.Find("Canvas").transform.Find("Menu").transform;
+                levelTitle.transform.SetPositionAndRotation(new Vector3(150,325,0),new Quaternion(0,0,0,0));
+                levelTitle.transform.Translate(0,-50*(rows/3),0);
+                levelTitle.name = "Level " + level;
+                levelTitle.AddComponent<Text>().text = levelTitle.name + ":";
+                levelTitle.GetComponent<Text>().font = thisFont;
+                levelTitle.GetComponent<Text>().fontSize = 42;
+                levelTitle.GetComponent<Text>().fontStyle = FontStyle.Bold;
+                levelTitle.GetComponent<Text>().horizontalOverflow = HorizontalWrapMode.Overflow;
+            }
+            listOfCards[i] = new Card(SpellList[i],false,0,300*(-1+cols%3),50-50*(rows/3), player, i);
+            cols++;
+            rows++;
         }
         Destroy(GameObject.Find("Display"));
+
+        GameObject scroller = thisSlider;
+        scroller.transform.SetParent(GameObject.Find("Canvas").transform);
+        scroller.name = "Scroller";
+        scroller.GetComponent<Slider>().value = 0;
+        scroller.GetComponent<Slider>().minValue = 0;
+        scroller.GetComponent<Slider>().maxValue = 50*(rows/3)-260;
+        scroller.GetComponent<Slider>().onValueChanged.AddListener(delegate {Scroll(); });
+        scroller.transform.SetSiblingIndex(0);
+        GameObject.Find("Canvas").transform.Find("Image").SetSiblingIndex(0);
+        
+        GameObject create = thisButton;
+        thisButton.GetComponent<Button>().onClick.AddListener(delegate {createDeck(listOfCards); });
+    }
+
+    public Card[] getList()
+    {
+        return listOfCards;
+    }
+
+    void Scroll()
+    {
+        GameObject.Find("Canvas").transform.Find("Menu").transform.localPosition = new Vector3(0,thisSlider.GetComponent<Slider>().value,0);
+    }
+
+    void createDeck(Card[] cards)
+    {
+        int x = 0;
+        Spell[] deck = GameObject.Find("System").GetComponent<DeckSystem>().spells;
+        for (int i = 0; i < listOfCards.Length; i++)
+        {
+            for(int j = 0; j < listOfCards[i].copies; j++)
+            {
+                Array.Resize<Spell>(ref GameObject.Find("System").GetComponent<DeckSystem>().spells, GameObject.Find("System").GetComponent<DeckSystem>().spells.Length+1);
+                GameObject.Find("System").GetComponent<DeckSystem>().spells[x++] = listOfCards[i].spell;
+            }
+        }
+        GameObject.Find("System").GetComponent<DeckSystem>().createDeck();
     }
 }
